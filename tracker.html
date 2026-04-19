@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Expense Tracker</title>
+<link rel="stylesheet" href="tracker.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>💰 Student Expense Tracker</h1>
+
+<form id="form">
+
+<select id="category" required>
+<option value="">Select Category</option>
+<option>Food</option>
+<option>Shopping</option>
+<option>Bills</option>
+<option>Rent</option>
+<option>Transport</option>
+<option>Groceries</option>
+<option>Medical</option>
+<option>Education</option>
+<option>Entertainment</option>
+<option>Travel</option>
+<option>Recharge</option>
+<option>Internet</option>
+<option>Clothing</option>
+<option>Fitness</option>
+<option>Gifts</option>
+<option>Snacks</option>
+<option>Stationary</option>
+<option>Petrol</option>
+<option>Loan</option>
+<option>Others</option>
+</select>
+
+<input type="number" id="amount" placeholder="Enter amount" required>
+
+<button type="submit">Add Transaction</button>
+
+</form>
+
+<button class="clear-btn" onclick="clearAll()">Clear All</button>
+
+<h3>Transactions</h3>
+<ul id="list"></ul>
+
+</div>
+
+<script src="tracker.js"></script>
+
+</body>
+</html>
